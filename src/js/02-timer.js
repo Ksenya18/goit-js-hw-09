@@ -37,6 +37,7 @@ function onStartBtn() {
       if (diff <= 0) {
         clearInterval(intervalId);
         startBtn.disabled = false;
+        return;
       }
 
       const {days, hours, minutes, seconds} = convertMs(diff);
